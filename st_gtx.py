@@ -1,7 +1,7 @@
 import streamlit as st
 import ten8t
 
-st.header("GTX to CSV File Translator")
+st.header(f"GTX to CSV File Translator (ten8t-{ten8t.__version__)} ")
 csv = st.text_input("Enter CSV Data")
 if st.button("Convert to GTX..."):
     st.text("GTX of " + csv)
